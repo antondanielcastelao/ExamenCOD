@@ -23,3 +23,17 @@ git checkout interface
 git add .\scr\Interface.java
 git commit -m "terminada ventana interfaz"
 ```
+Para hacerlo más interesante, vamos a hacer un cambio en main y harémos un rebase en ambas ramas
+```bash
+git checkout main
+# hacemos el cambio en la clase Main...
+git add .\scr\Main.java
+git commit -m "cambio de la funcion principal"
+
+# vamos a las otras ramas y hacemos el rebase
+git checkout interface
+git rebase main
+
+git checkout datos
+git rebase main
+```
