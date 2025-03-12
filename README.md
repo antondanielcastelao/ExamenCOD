@@ -8,3 +8,11 @@ git checkout -b datos
 git checkout -b interface
 git checkout -b readme
 ```
+## 2o Paso: Commits del desarrollo de la release
+Empezamos por los commits de la branch datos
+```bash
+git checkout datos
+# proceso para hacer un commit (repetido varias veces)
+git add .\scr\Datos.java
+git commit -m "conexion base de datos"
+```
