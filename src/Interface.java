@@ -1,3 +1,6 @@
 public class Interface {
-    // codigo para la interfaz
+    // codigo para la ventana de la interfaz
+
+
+    // codigo para el menu desplegable
 }
