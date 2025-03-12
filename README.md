@@ -53,11 +53,16 @@ git checkout interface
 git add .\scr\Interface.java
 git commit -m "comentario"
 ```
-Nos equivocamos y hacemos un cambio que rompe la interfaz, por lo que queremos **retroceder**. Para ello hacemos uso de `git reset`.
+Nos equivocamos y hacemos un cambio que rompe la interfaz, por lo que queremos **retroceder**. Para ello hacemos uso de `git revert`.
 ```bash
 git log --oneline # a traves de este comando conocemos el codigo HEAD del utlimo commit en el que es funcional el programa
 
 git revert d4a33fb
 # despues del revert hacemos un commit de los cambios
 git commit -m "revert al anterior framework"
+```
+Hemos terminado la interfaz, por lo que vamos a mezclarlo con la rama main. Igualmente, como tenemos muchos commits desordenados y no hemos hecho muchos, vamos a resumir nuestro historial haciendo un **merge con squash**.
+```bash
+git checkout main
+git merge --squash interface
 ```
