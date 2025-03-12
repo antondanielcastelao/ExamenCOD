@@ -23,6 +23,7 @@ git checkout interface
 git add .\scr\Interface.java
 git commit -m "terminada ventana interfaz"
 ```
+## 3er Paso: Mezclar las ramas
 Para hacerlo más interesante, vamos a hacer un cambio en main y harémos un **rebase** en ambas ramas
 ```bash
 git checkout main
@@ -44,6 +45,17 @@ Terminamos el desarrollo de la conexion con la base de datos, por lo que **mezcl
 ```bash
 git checkout main
 git merge datos
+```
+Vamos a **continuar desarrollando la interfaz**, por lo que hacemos un par de commits más
+```bash
+git checkout interface
 
-git commit -m "implementacion rama datos"
+git add .\scr\Interface.java
+git commit -m "comentario"
+```
+Nos equivocamos y hacemos un cambio que rompe la interfaz, por lo que queremos **retroceder**. Para ello hacemos uso de `git reset`.
+```bash
+git log --oneline # a traves de este comando conocemos el codigo HEAD del utlimo commit en el que es funcional el programa
+
+git reset
 ```
