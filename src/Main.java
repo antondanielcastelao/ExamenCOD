@@ -9,5 +9,6 @@ public class Main {
     public static void main(String[] args) {
         // Imprime un mensaje
         System.out.println("Hola Examen!");
+        System.out.println("Este cambio en la clase main es super importante y necesario pero hay que implemenetarlo en las otras ramas!");
     }
 }
