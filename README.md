@@ -104,3 +104,17 @@ git commit -m "commits desarrollador"
 Ahora, desde la pagina de github creamos la pr y la cerramos aceptándola para mezclar nuestro codigo.
 ![img_1.png](img_1.png)
 
+Solo con aceptarla ya podemos hacer el merge entre la parte del colaborador y la nuestra.
+
+Por último, para traer a local los cambios de la rama main que ha hecho el pr, usamos `git fetch`.
+
+## Sacar la release
+El codigo del programa ya está terminado, por lo que es el momento de sacar la release `1.0`.
+```bash
+# vamos a la rama main
+git checkout main
+# establecemos las tags de la release
+git tag -a v1.0 -m "Primera release estable"
+# subimos el tag a github
+git push origin v1.0
+```
