@@ -9,7 +9,7 @@ git checkout -b interface
 git checkout -b readme
 ```
 ## 2o Paso: Commits del desarrollo de la release
-Empezamos por los commits de la branch datos
+Empezamos por los **commits de la branch datos**
 ```bash
 git checkout datos
 # proceso para hacer un commit (repetido varias veces)
@@ -23,7 +23,7 @@ git checkout interface
 git add .\scr\Interface.java
 git commit -m "terminada ventana interfaz"
 ```
-Para hacerlo más interesante, vamos a hacer un cambio en main y harémos un rebase en ambas ramas
+Para hacerlo más interesante, vamos a hacer un cambio en main y harémos un **rebase** en ambas ramas
 ```bash
 git checkout main
 # hacemos el cambio en la clase Main...
@@ -36,4 +36,14 @@ git rebase main
 
 git checkout datos
 git rebase main
+
+git checkout readme
+git rebase main
+```
+Terminamos el desarrollo de la conexion con la base de datos, por lo que **mezclamos la rama con nuestra rama principal**
+```bash
+git checkout main
+git merge datos
+
+git commit -m "implementacion rama datos"
 ```
