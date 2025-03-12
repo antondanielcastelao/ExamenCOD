@@ -92,3 +92,10 @@ git merge --squash issue-1
 # commit final que marca como solucionada la issue
 git commit -m "Arreglada Issue #1: bucle sfx"
 ```
+
+## Pull Request
+Nos imaginamos que yo mismo soy **otro desarrollador que colabora en el proyecto**, y hago desde mi propia rama cambios.
+```bash
+git checkout -b colaborador
+git add .\src\Colaborador.java
+```
