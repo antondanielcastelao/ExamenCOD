@@ -113,8 +113,11 @@ El codigo del programa ya está terminado, por lo que es el momento de sacar la 
 ```bash
 # vamos a la rama main
 git checkout main
+git pull # para aplicar los cambios de la pr
 # establecemos las tags de la release
 git tag -a v1.0 -m "Primera release estable"
 # subimos el tag a github
 git push origin v1.0
 ```
+Desde la pagina de github creamos la release
+![img_2.png](img_2.png)
