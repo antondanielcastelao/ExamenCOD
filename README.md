@@ -16,3 +16,10 @@ git checkout datos
 git add .\scr\Datos.java
 git commit -m "conexion base de datos"
 ```
+Repetimos el proceso y hacemos un par de commits en la branch interface
+```bash
+git checkout interface
+# proceso para hacer un commit (repetido varias veces)
+git add .\scr\Interface.java
+git commit -m "terminada ventana interfaz"
+```
