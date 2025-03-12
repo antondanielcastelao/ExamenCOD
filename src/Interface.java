@@ -7,4 +7,6 @@ public class Interface {
     // botones menu
 
     // cambio de framework de javascript
+
+    // integrar sonidos en programa
 }
