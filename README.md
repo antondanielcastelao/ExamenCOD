@@ -57,5 +57,7 @@ Nos equivocamos y hacemos un cambio que rompe la interfaz, por lo que queremos *
 ```bash
 git log --oneline # a traves de este comando conocemos el codigo HEAD del utlimo commit en el que es funcional el programa
 
-git reset
+git revert d4a33fb
+# despues del revert hacemos un commit de los cambios
+git commit -m "revert al anterior framework"
 ```
