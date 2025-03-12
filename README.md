@@ -97,5 +97,10 @@ git commit -m "Arreglada Issue #1: bucle sfx"
 Nos imaginamos que yo mismo soy **otro desarrollador que colabora en el proyecto**, y hago desde mi propia rama cambios.
 ```bash
 git checkout -b colaborador
+
 git add .\src\Colaborador.java
+git commit -m "commits desarrollador"
 ```
+Ahora, desde la pagina de github creamos la pr y la cerramos aceptándola para mezclar nuestro codigo.
+![img_1.png](img_1.png)
+
